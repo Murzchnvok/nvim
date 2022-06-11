@@ -45,4 +45,43 @@ local on_attach = function(_, bufnr)
 	lspsig.on_attach()
 end
 
-return lspconfig, capabilities, on_attach
+local servers = {
+	"clangd",
+	"cssls",
+	"cssmodules_ls",
+	"emmet_ls",
+	"gopls",
+	"html",
+	"pyright",
+	"tsserver",
+}
+for _, server in pairs(servers) do
+	lspconfig[server].setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	})
+end
+
+require("rust-tools").setup({
+	server = {
+		capabilities = capabilities,
+		on_attach = on_attach,
+		settings = {
+			["rust-analyzer"] = {
+				assist = {
+					importPrefix = "by_self",
+				},
+				cargo = {
+					loadOutDirsFromCheck = true,
+					allFeatures = true,
+				},
+				procMacro = {
+					enable = true,
+				},
+				checkOnSave = {
+					command = "clippy",
+				},
+			},
+		},
+	},
+})
