@@ -1,6 +1,9 @@
 <h2 align="center">My simple nvim config.</h2>
 <div align="center">
     <img src="https://github.com/Murzchnvok/nvim/blob/main/screenshots/nvim.png?raw=true" />
+    <img src="https://github.com/Murzchnvok/nvim/blob/main/screenshots/golang.png?raw=true" />
+    <img src="https://github.com/Murzchnvok/nvim/blob/main/screenshots/python.png?raw=true" />
+    <img src="https://github.com/Murzchnvok/nvim/blob/main/screenshots/rust.png?raw=true" />
 </div>
 
 ## Dependencies
