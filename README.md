@@ -35,6 +35,14 @@ cargo install stylua
 go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
+```bash
+go install golang.org/x/tools/gopls@latest
+```
+
+```bash
+go install golang.org/x/tools/cmd/goimports@latest
+```
+
 ### NPM
 
 ```bash
