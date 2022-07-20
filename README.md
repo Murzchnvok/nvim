@@ -46,7 +46,7 @@ go install golang.org/x/tools/cmd/goimports@latest
 ### NPM
 
 ```bash
-npm install --location=global emmet-ls pyright prettier typescript typescript-language-server vscode-langservers-extracted
+npm install --location=global cssmodules-language-server emmet-ls pyright prettier typescript typescript-language-server vscode-langservers-extracted
 ```
 
 ### PIP
