@@ -16,7 +16,11 @@ return require("packer").startup(function(use)
 
 	use("lewis6991/impatient.nvim")
 
+	use("andweeb/presence.nvim")
+
 	use("sainnhe/gruvbox-material")
+
+	use("mrshmllow/document-color.nvim")
 
 	use("windwp/nvim-autopairs")
 
@@ -33,7 +37,7 @@ return require("packer").startup(function(use)
 		requires = {
 			"hrsh7th/nvim-cmp",
 			"hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-nvim-lsp-signature-help",
+			"hrsh7th/cmp-nvim-lsp-signature-help",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
