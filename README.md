@@ -22,6 +22,7 @@
 - [Emmet-ls](https://github.com/aca/emmet-ls) emmet support based on LSP.
 - [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server) TypeScript & JavaScript Language Server.
 - [VSCode Language Servers Extracted](https://www.npmjs.com/package/vscode-langservers-extracted) HTML/CSS/JSON language servers extracted from vscode.
+- [Tailwind CSS IntelliSense](https://github.com/tailwindlabs/tailwindcss-intellisense) autocomplete, syntax highlighting, and linting.
 
 ### Cargo
 
@@ -46,7 +47,7 @@ go install golang.org/x/tools/cmd/goimports@latest
 ### NPM
 
 ```bash
-npm install --location=global cssmodules-language-server emmet-ls pyright prettier typescript typescript-language-server vscode-langservers-extracted
+npm install -g cssmodules-language-server emmet-ls pyright prettier typescript typescript-language-server vscode-langservers-extracted @tailwindcss/language-server
 ```
 
 ### PIP
